@@ -1,5 +1,5 @@
 #读取文件中的账号密码
-filePassword=[]
+filePassword=[]                    #定义了一个list
 fileName=[]
 i=0
 fileRead=open("information.log","r+")
@@ -12,7 +12,7 @@ while 1:
     i=i+1
 fileRead.close()
 fileName.pop()
-filePassword.pop()
+filePassword.pop()                    #读文件的时候多读了一个，现在要弹出去
 #要求用户输入用户名密码
 inputName=input("Please input your name")
 flag=0                                     #flag用来标记输入是否正确，输入密码正确flag置为1
